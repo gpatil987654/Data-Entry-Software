@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{CBF07BEF-9191-4C47-9332-C4CF10D3478D}]
+@="Project_Containment_InnerServer"
+[HKEY_CLASSES_ROOT\CLSID\{CBF07BEF-9191-4C47-9332-C4CF10D3478D}\InprocServer32]
+@="C:\\Windows\\System32\\ContainmentInnerServer.dll"
+

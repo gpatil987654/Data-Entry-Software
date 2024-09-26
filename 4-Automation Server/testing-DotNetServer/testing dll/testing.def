@@ -1,0 +1,8 @@
+LIBRARY testing.dll
+EXPORTS
+      DllGetClassObject PRIVATE
+      DllCanUnloadNow   PRIVATE
+
+
+
+

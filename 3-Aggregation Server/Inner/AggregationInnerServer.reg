@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{DB4F1186-395F-4E27-A8C4-26D49AB1E395}]
+@="Project_Aggregation_InnerServer"
+[HKEY_CLASSES_ROOT\CLSID\{DB4F1186-395F-4E27-A8C4-26D49AB1E395}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationInnerServer.dll"
+

@@ -1,0 +1,9 @@
+LIBRARY ClassFactoryReadFile.dll
+EXPORTS
+      DllGetClassObject PRIVATE
+      DllCanUnloadNow   PRIVATE
+
+
+
+
+

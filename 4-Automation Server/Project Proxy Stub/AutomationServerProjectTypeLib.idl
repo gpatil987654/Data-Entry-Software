@@ -1,0 +1,57 @@
+import "unknwn.idl";
+//Interface defination block
+//Attribute Sub-Block
+[
+	object,
+	uuid(E79B1EF0-03F6-4490-AC60-6EBC286D9754),//IID of IWriteToFileAutomation
+	helpstring("This is IWriteToFileAutomation Interface declaration"),
+	pointer_default(unique),
+	dual,
+	oleautomation
+]
+
+//Declaration Sub-Block
+
+interface IWriteToFileAutomation :IDispatch
+{
+	import "oaidl.idl";
+
+
+	HRESULT  WriteDataToFileAutomation([in] BSTR, [in] BSTR, [in] BSTR, [in] BSTR, [in] BSTR, [in] BSTR);
+
+	HRESULT  ReadDataFromFileAutomation([in] HWND,[in] char*,[in] int*);
+};
+
+
+//TypeLibrary defination block
+[
+	uuid(96C63C46-7165-4B8E-BFFD-4B71BEC31CB5),//LIBID of Type Library
+	version(1.0),//major and minor version
+	helpstring("Automation server Project type librrary")
+]
+
+library AutomationServerProjectTypeLib
+{
+	importlib("stdole32.tlb");
+
+	//Co-class defination block
+	[
+		uuid(B1BA2D99-9FB4-4724-B274-8BE0136E656F),//CLSID of MyMath
+		helpstring("This is automation Project server co-class")
+	]
+
+	coclass CWriteToFileAutomation
+	{
+		[default] interface IWriteToFileAutomation;
+	};
+
+};
+
+//  midl.exe /h AutomationProxyStubHeader.h /iid AutomationProxyStubGuids.c /dlldata AutomationProxyStubDllData.c /proxy AutomationProxyStub.c AutomationServerProjectTypeLib.idl
+
+//Dll file creation
+//   cl.exe /c /EHsc /D REGISTER_PROXY_DLL AutomationProxyStub.c AutomationProxyStubDllData.c AutomationProxyStubGuids.c
+
+//   link.exe AutomationProxyStub.obj AutomationProxyStubDllData.obj AutomationProxyStubGuids.obj /DLL /DEF:AutomationServerProjectProxyStub.def user32.lib ole32.lib oleaut32.lib advapi32.lib RPCNS4.lib RPCRT4.lib /SUBSYSTEM:WINDOWS
+ 
+// regsvr32 AutomationServerProjectProxyStub.dll

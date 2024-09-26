@@ -1,0 +1,8 @@
+LIBRARY AutomationServerProject.dll
+EXPORTS
+      DllGetClassObject PRIVATE
+      DllCanUnloadNow   PRIVATE
+
+
+
+

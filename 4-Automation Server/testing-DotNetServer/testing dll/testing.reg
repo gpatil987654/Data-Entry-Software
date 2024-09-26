@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{30DF6F0A-1378-4C02-962A-8C59F870727B}]
+@="testing_Puropse"
+[HKEY_CLASSES_ROOT\CLSID\{30DF6F0A-1378-4C02-962A-8C59F870727B}\InprocServer32]
+@="C:\\Windows\\System32\\testing.dll"
+

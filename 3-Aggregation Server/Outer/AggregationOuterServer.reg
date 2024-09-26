@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{BB7608C3-99DC-4389-BB4A-9BE4C1EC6AD6}]
+@="Project_Aggregation_OuterServer"
+[HKEY_CLASSES_ROOT\CLSID\{BB7608C3-99DC-4389-BB4A-9BE4C1EC6AD6}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationOuterServer.dll"
+

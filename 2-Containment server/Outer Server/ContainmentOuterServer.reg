@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{9731EF17-140F-4704-934E-681C3D5B7A11}]
+@="Project_Containment_OuterServer"
+[HKEY_CLASSES_ROOT\CLSID\{9731EF17-140F-4704-934E-681C3D5B7A11}\InprocServer32]
+@="C:\\Windows\\System32\\ContainmentOuterServer.dll"
+

@@ -1,0 +1,53 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.32.31332.0 (18befc53).
+//
+// C:\WinDev2022\Project Snippets\2-Dialogue_Box\05-DotNetServer\dotnetserverreadwritefile1.tlh
+//
+// C++ source equivalent of type library DotNetServerReadWriteFile1.tlb
+// compiler-generated file - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("eef7051c-f862-3a63-a67d-1d89d2d60eaa"))
+/* LIBID */ __DotNetServerReadWriteFile1;
+struct /* coclass */ DotNetServerReadWriteFile;
+struct __declspec(uuid("f0ffa13d-706a-3149-8c56-49e4cfbac864"))
+/* dual interface */ _DotNetServerReadWriteFile;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_DotNetServerReadWriteFile, __uuidof(_DotNetServerReadWriteFile));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("ccf5cef9-79eb-33e2-b9aa-16d4ef2fd3e8"))
+DotNetServerReadWriteFile;
+    // [ default ] interface _DotNetServerReadWriteFile
+    // interface _Object
+
+struct __declspec(uuid("f0ffa13d-706a-3149-8c56-49e4cfbac864"))
+_DotNetServerReadWriteFile : IDispatch
+{};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_DotNetServerReadWriteFile1 =
+    {0xeef7051c,0xf862,0x3a63,{0xa6,0x7d,0x1d,0x89,0xd2,0xd6,0x0e,0xaa}};
+extern "C" const GUID __declspec(selectany) CLSID_DotNetServerReadWriteFile =
+    {0xccf5cef9,0x79eb,0x33e2,{0xb9,0xaa,0x16,0xd4,0xef,0x2f,0xd3,0xe8}};
+extern "C" const GUID __declspec(selectany) IID__DotNetServerReadWriteFile =
+    {0xf0ffa13d,0x706a,0x3149,{0x8c,0x56,0x49,0xe4,0xcf,0xba,0xc8,0x64}};
+
+#pragma pack(pop)
